@@ -4,13 +4,14 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
+            @foreach ($posts as $post)
+            <div class="card my-4">
                 <div class="card-body">
-                   <h5>Benvenuto, {{Auth::user()->name}} !!</h5>
+                    <h5>{{$post->title}}</h5>
+                    <p>{{$post->content}}</p>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>
