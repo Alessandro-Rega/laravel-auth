@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $users = \App\User::all();
+        return view('admin.home', compact('users'));
     }
 }
