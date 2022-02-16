@@ -4,6 +4,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
+            <div class="card-header mb-4">
+                <a href="{{route('posts.create')}}"><button type="button" class="btn btn-success">Crea Post</button></a>
+            </div>
+            <div class="card-header">
+                <span>Posts</span>
+            </div>
             <table class="table">
                 <thead>
                   <tr>

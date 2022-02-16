@@ -19,7 +19,7 @@
                 </div>
                 <div class="mb-3">
                 <label for="content" class="form-label">Content</label>
-                <textarea class="form-control @error('content') is-invalid @enderror"" id="content" name="content" placeholder="Inserisci il contenuto" rows="10">{{old('title') ? old('title') : $post->content}}</textarea>
+                <textarea class="form-control @error('content') is-invalid @enderror"" id="content" name="content" placeholder="Inserisci il contenuto" rows="10">{{old('content') ? old('content') : $post->content}}</textarea>
                 @error('content')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
